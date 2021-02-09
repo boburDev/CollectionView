@@ -13,8 +13,13 @@
 		95177EA825D2FF0800570831 /* CollectionView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95177EA625D2FF0800570831 /* CollectionView.xcdatamodeld */; };
 		95177EAA25D2FF0800570831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95177EA925D2FF0800570831 /* Assets.xcassets */; };
 		95177EAD25D2FF0800570831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95177EAB25D2FF0800570831 /* LaunchScreen.storyboard */; };
-		95177EBB25D2FFAB00570831 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95177EB925D2FFAB00570831 /* HomeViewController.swift */; };
-		95177EBC25D2FFAB00570831 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95177EBA25D2FFAB00570831 /* HomeViewController.xib */; };
+		95177EBB25D2FFAB00570831 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95177EB925D2FFAB00570831 /* CollectionViewController.swift */; };
+		95177EBC25D2FFAB00570831 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95177EBA25D2FFAB00570831 /* CollectionViewController.xib */; };
+		95177EC325D3143A00570831 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95177EC125D3143A00570831 /* ScrollViewController.swift */; };
+		95177EC425D3143A00570831 /* ScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95177EC225D3143A00570831 /* ScrollViewController.xib */; };
+		95177EC725D3165700570831 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95177EC625D3165700570831 /* Item.swift */; };
+		95177ECD25D316DD00570831 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95177ECB25D316DD00570831 /* ItemCollectionViewCell.swift */; };
+		95177ECE25D316DD00570831 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95177ECC25D316DD00570831 /* ItemCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +31,13 @@
 		95177EA925D2FF0800570831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95177EAC25D2FF0800570831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95177EAE25D2FF0800570831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95177EB925D2FFAB00570831 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		95177EBA25D2FFAB00570831 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		95177EB925D2FFAB00570831 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		95177EBA25D2FFAB00570831 /* CollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
+		95177EC125D3143A00570831 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		95177EC225D3143A00570831 /* ScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScrollViewController.xib; sourceTree = "<group>"; };
+		95177EC625D3165700570831 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		95177ECB25D316DD00570831 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		95177ECC25D316DD00570831 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 		95177E9C25D2FF0800570831 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				95177ECA25D316BC00570831 /* cell */,
+				95177EC925D316B300570831 /* model */,
 				95177EB825D2FF9000570831 /* controller */,
 				95177EB525D2FF2900570831 /* apputill */,
 				95177E9D25D2FF0800570831 /* AppDelegate.swift */,
@@ -83,10 +95,29 @@
 		95177EB825D2FF9000570831 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				95177EB925D2FFAB00570831 /* HomeViewController.swift */,
-				95177EBA25D2FFAB00570831 /* HomeViewController.xib */,
+				95177EB925D2FFAB00570831 /* CollectionViewController.swift */,
+				95177EBA25D2FFAB00570831 /* CollectionViewController.xib */,
+				95177EC125D3143A00570831 /* ScrollViewController.swift */,
+				95177EC225D3143A00570831 /* ScrollViewController.xib */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		95177EC925D316B300570831 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				95177EC625D3165700570831 /* Item.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		95177ECA25D316BC00570831 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				95177ECB25D316DD00570831 /* ItemCollectionViewCell.swift */,
+				95177ECC25D316DD00570831 /* ItemCollectionViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +179,10 @@
 			files = (
 				95177EAD25D2FF0800570831 /* LaunchScreen.storyboard in Resources */,
 				95177EAA25D2FF0800570831 /* Assets.xcassets in Resources */,
+				95177EC425D3143A00570831 /* ScrollViewController.xib in Resources */,
+				95177ECE25D316DD00570831 /* ItemCollectionViewCell.xib in Resources */,
 				95177EA525D2FF0800570831 /* Main.storyboard in Resources */,
-				95177EBC25D2FFAB00570831 /* HomeViewController.xib in Resources */,
+				95177EBC25D2FFAB00570831 /* CollectionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +195,11 @@
 			files = (
 				95177E9E25D2FF0800570831 /* AppDelegate.swift in Sources */,
 				95177EA825D2FF0800570831 /* CollectionView.xcdatamodeld in Sources */,
+				95177EC325D3143A00570831 /* ScrollViewController.swift in Sources */,
 				95177EA025D2FF0800570831 /* SceneDelegate.swift in Sources */,
-				95177EBB25D2FFAB00570831 /* HomeViewController.swift in Sources */,
+				95177EC725D3165700570831 /* Item.swift in Sources */,
+				95177EBB25D2FFAB00570831 /* CollectionViewController.swift in Sources */,
+				95177ECD25D316DD00570831 /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

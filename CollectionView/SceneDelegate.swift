@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func callHomeViewController() {
-        let vc:HomeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        let vc:CollectionViewController = CollectionViewController(nibName: "CollectionViewController", bundle: nil)
         let nc = UINavigationController(rootViewController: vc)
         if self.window == nil {
             self.window = UIWindow(frame: UIScreen.main.bounds)
