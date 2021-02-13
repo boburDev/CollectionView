@@ -1,15 +1,14 @@
 //
-//  ScrollViewController.swift
+//  ScrollSViewController.swift
 //  CollectionView
 //
-//  Created by Boburmirzo on 2/10/21.
+//  Created by Boburmirzo on 2/13/21.
 //
 
 import UIKit
 
-class ScrollViewController: UIViewController {
-    
-    
+class ScrollSViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
         AppViews()
@@ -39,5 +38,6 @@ class ScrollViewController: UIViewController {
     @objc func leftTapped(){
         callCollectionController()
     }
+
 
 }
